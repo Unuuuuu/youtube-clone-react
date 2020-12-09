@@ -1,13 +1,19 @@
 import React from "react";
 import styles from "./video_item.module.css";
 
-const VideoItem = ({ title, channelTitle, imgUrl }) => {
+const VideoItem = ({ video: { snippet } }) => {
   return (
-    <li className={styles.video}>
-      <img className={styles.videoImg} src={imgUrl} alt="이미지"></img>
-      <div className={styles.wrapper}>
-        <span className={styles.videoTitle}>{title}</span>
-        <span className={styles.videoChannelTitle}>{channelTitle}</span>
+    <li className={styles.container}>
+      <div className={styles.video}>
+        <img
+          className={styles.thumbnail}
+          src={snippet.thumbnails.medium.url}
+          alt="video thumbnail"
+        ></img>
+        <div className={styles.metadata}>
+          <p className={styles.title}>{snippet.title}</p>
+          <p className={styles.channel}>{snippet.channelTitle}</p>
+        </div>
       </div>
     </li>
   );
