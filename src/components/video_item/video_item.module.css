@@ -1,0 +1,23 @@
+.video {
+  display: flex;
+  background-color: gainsboro;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.videoImg {
+  margin-right: 1em;
+}
+
+.videoTitle {
+  margin-bottom: 0.2em;
+}
+
+.videoChannelTitle {
+  font-size: 14px;
+  opacity: 0.7;
+}
