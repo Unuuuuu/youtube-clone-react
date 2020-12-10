@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.23afc489.chunk.css",
-    "main.js": "/my-app/static/js/main.8d5a318f.chunk.js",
-    "main.js.map": "/my-app/static/js/main.8d5a318f.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.d95c84d7.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.d95c84d7.js.map",
-    "static/js/2.c1d4fdc2.chunk.js": "/my-app/static/js/2.c1d4fdc2.chunk.js",
-    "static/js/2.c1d4fdc2.chunk.js.map": "/my-app/static/js/2.c1d4fdc2.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "precache-manifest.63abfdd103ac0413998d75e5933d90ef.js": "/my-app/precache-manifest.63abfdd103ac0413998d75e5933d90ef.js",
-    "service-worker.js": "/my-app/service-worker.js",
-    "static/css/main.23afc489.chunk.css.map": "/my-app/static/css/main.23afc489.chunk.css.map",
-    "static/js/2.c1d4fdc2.chunk.js.LICENSE.txt": "/my-app/static/js/2.c1d4fdc2.chunk.js.LICENSE.txt"
+    "main.css": "/youtube-clone-react/static/css/main.23afc489.chunk.css",
+    "main.js": "/youtube-clone-react/static/js/main.8d5a318f.chunk.js",
+    "main.js.map": "/youtube-clone-react/static/js/main.8d5a318f.chunk.js.map",
+    "runtime-main.js": "/youtube-clone-react/static/js/runtime-main.9f7ef099.js",
+    "runtime-main.js.map": "/youtube-clone-react/static/js/runtime-main.9f7ef099.js.map",
+    "static/js/2.c1d4fdc2.chunk.js": "/youtube-clone-react/static/js/2.c1d4fdc2.chunk.js",
+    "static/js/2.c1d4fdc2.chunk.js.map": "/youtube-clone-react/static/js/2.c1d4fdc2.chunk.js.map",
+    "index.html": "/youtube-clone-react/index.html",
+    "precache-manifest.56469ec6130847e60675b04d0bb8b8e0.js": "/youtube-clone-react/precache-manifest.56469ec6130847e60675b04d0bb8b8e0.js",
+    "service-worker.js": "/youtube-clone-react/service-worker.js",
+    "static/css/main.23afc489.chunk.css.map": "/youtube-clone-react/static/css/main.23afc489.chunk.css.map",
+    "static/js/2.c1d4fdc2.chunk.js.LICENSE.txt": "/youtube-clone-react/static/js/2.c1d4fdc2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d95c84d7.js",
+    "static/js/runtime-main.9f7ef099.js",
     "static/js/2.c1d4fdc2.chunk.js",
     "static/css/main.23afc489.chunk.css",
     "static/js/main.8d5a318f.chunk.js"
