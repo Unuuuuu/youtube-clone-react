@@ -1,4 +1,5 @@
 import React from "react";
+import { useCallback } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import styles from "./app.module.css";
@@ -14,24 +15,34 @@ const App = ({ youtube }) => {
     youtube
       .mostPopular() //
       .then(setVideos);
-  }, []);
+  }, [youtube]);
 
-  const handleSearch = (query) => {
-    youtube
-      .search(query) //
-      .then((videos) => {
-        setVideos(videos);
-        setSelectedVideo(null);
-      });
-  };
+  const handleSearch = useCallback(
+    (query) => {
+      youtube
+        .search(query) //
+        .then((videos) => {
+          setVideos(videos.map((video) => ({ ...video, id: video.id.videoId })));
+          setSelectedVideo(null);
+        });
+    },
+    [youtube]
+  );
 
   const handleVideoClick = (video) => {
     setSelectedVideo(video);
   };
 
+  const handleLogoClick = useCallback(async () => {
+    await setSelectedVideo(null);
+    youtube
+      .mostPopular() //
+      .then(setVideos);
+  }, [youtube]);
+
   return (
     <div className={styles.app}>
-      <SearchHeader onSearch={handleSearch} />
+      <SearchHeader onSearch={handleSearch} onLogoClick={handleLogoClick} />
       <section className={styles.content}>
         {selectedVideo && (
           <div className={styles.detail}>
