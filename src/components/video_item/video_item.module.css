@@ -1,21 +1,27 @@
 .container {
-  width: 50%;
   padding: 0.2em;
   box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53);
+  transition: transform 0.25s ease-in;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+.container.grid {
+  width: 50%;
+}
+
+.container.list {
+  width: 100%;
 }
 
 .video {
   width: 100%;
   display: flex;
   align-items: center;
-  border: 1px solid gray;
   cursor: pointer;
   background-color: white;
-  transition: transform 0.25s ease-in;
-}
-
-.video:hover {
-  transform: scale(1.01);
 }
 
 .metadata {
